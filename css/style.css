@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    background-color: #181717;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.logo {
+    text-align: center;
+
+    font-family: 'Lalezar', cursive;
+    color: #F5F5E2;
+    font-weight: 400;
+    font-size: 40px;
+
+    position: relative;
+    top: 10px;
+}
+
+.login {
+    text-align: right;
+    position: relative;
+    bottom: 35px;
+    right: 30px;
+}
+
+.login--button {
+    text-decoration: none;
+    color: #BCAEAE;
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 24px;
+
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.login--button:hover {
+    background-size: 100% 2px;
+}
+
+/* SECTION */
+.section {
+    margin-top: 400px;
+    text-align: center;
+}
+
+.section--div {
+    margin-top: 150px;
+}
+
+.section--h2 {
+    font-size: 80px;
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: 300;
+
+
+    margin-bottom: 30px;
+}
+
+.section--h3 {
+    text-transform: uppercase;
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: 400;
+    font-size: 60px;
+
+    margin-bottom: 70px;
+}
+
+.section--p--under--h2 {
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 24px;
+    text-transform: lowercase;
+}
+
+/* WELCOME */
+.welcome--button{
+    height: 150px;
+    width: 600px;
+    border: none;
+    z-index: 1;
+    position: relative;
+
+
+    font-size: 100px;
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: 1000;
+    color: rgb(11, 11, 11);
+    text-transform: uppercase;
+
+    display: block;
+    margin: 0 auto;
+}
+
+.welcome--button:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.welcome--button:focus {
+    outline: none;
+}
+
+.welcome--button::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(21, 19, 19);
+    transform-origin: center right;
+    transform: scaleX(0);
+    transition: transform 0.25s ease-in-out;
+}
+
+.welcome--button:hover::before {
+    transform-origin: center left;
+    transform: scaleX(1);
+}
+
+/* CARD */
+.card {
+    text-align: left;
+    margin-bottom: 50px;
+    margin-left: 300px;
+}
+
+.card--img {
+    height: 800px;
+    width: 550px;
+    border: 10px solid rgb(11, 10, 10);
+}
+
+.card--p {
+    font-family: 'Anonymous Pro', monospace;
+    font-style: italic;
+    font-size: 30px;
+    background-color:rgb(217, 217, 217);
+    border-radius: 0.5em;
+
+    height: 300px;
+    width: 800px;
+    position: relative;
+    left: 700px;
+    bottom: 700px;
+
+}
+
+.card--name {
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 25px;
+    font-weight: bold;
+
+    position: relative;
+    bottom: 300px;
+}
+
+/* PARTNER */
+.partner {
+    display: inline-block;
+    width: 33%;
+}
+
+.partner--img {
+    width: 600px;
+    height: 300px;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 500px;
+}
+
+.footer--h2 {
+    font-size: 65px;
+}
+
+.form--input {
+    height: 100px;
+    width: 400px;
+    margin-top: 40px;
+
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 60px;
+    border: 4px solid grey;
+    border-radius: 0.5em;
+}
+
+.form--email {
+    width: 900px;
+}
+
+.form--button {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(135, 135, 135);
+    background-image: linear-gradient(to top left,
+                                    rgba(0, 0, 0, .2),
+                                    rgba(0, 0, 0, .2) 30%,
+                                    rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+    width: 150px;
+
+    margin-top: 30px;
+}
+
+.form--button:hover {
+    background-color: rgb(143, 142, 142);
+}
+
+.form--button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
